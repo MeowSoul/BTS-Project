@@ -1,0 +1,22 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text{
+    font-size: 18px;
+    font-family:Oswald,'serif';
+    width:45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color: #FF3D12;
+    color:white;
+    border: 0;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-family:Oswald,'serif';
+}
