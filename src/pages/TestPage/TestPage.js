@@ -1,6 +1,7 @@
 import style from "./TestPage.module.css"
 import {useState} from "react";
 import useApi from "../../api/useApi";
+import {useNavigate} from "react-router-dom";
 
 export default function  TestPage()
 {
@@ -10,6 +11,7 @@ export default function  TestPage()
     const [currentResponse, setCurrentResponse] = useState(null)
 
     const {getQuestionsData} = useApi()
+    const navigate = useNavigate()
 
     const questions = getQuestionsData()
 
@@ -18,6 +20,9 @@ export default function  TestPage()
             if (currentResponse === questions[count - 1].correctAnswer)
                 setScore(score + 1)
         }
+        if (questions.length === count)
+            return navigate("/result")
+
         setCurrentResponse(null)
         setCount(count + 1)
     }
@@ -40,7 +45,7 @@ export default function  TestPage()
                 </div>
                 <div className={style.question__answers}>
                     {questions[count - 1].answers.map(answer => (
-                        <div className={style.question__answer}>
+                        <div className={style.question__answer} key={answer.id}>
                             <input
                                 type={"radio"}
                                 data-id={answer.id}
