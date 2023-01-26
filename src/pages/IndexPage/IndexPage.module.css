@@ -1,9 +1,11 @@
-.container{
+.container
+{
     width: 80%;
     margin: 0 auto;
 }
 
-.text{
+.text
+{
     font-size: 18px;
     font-family:Oswald,'serif';
     width:45%;
@@ -11,7 +13,8 @@
     margin-bottom: 20px;
 }
 
-.button{
+.button
+{
     background-color: #FF3D12;
     color:white;
     border: 0;
