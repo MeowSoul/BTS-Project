@@ -25,19 +25,19 @@ const questionData = [
         question:"Ты любишь Чон Гука?",
         answers:[
             {
-                id: 1,
+                id: 4,
                 text: "yes"
             },
             {
-                id: 2,
+                id: 5,
                 text: "YES!"
             },
             {
-                id: 3,
+                id: 6,
                 text: "ДА,АБСОЛЮТНО"
             }
         ],
-        correctAnswer:3,
+        correctAnswer:6,
     },
     {
         id:1,
@@ -45,19 +45,19 @@ const questionData = [
         question:"Ты любишь Чон Гука?",
         answers:[
             {
-                id: 1,
+                id: 7,
                 text: "Да"
             },
             {
-                id: 2,
+                id: 8,
                 text: "Да"
             },
             {
-                id: 3,
+                id: 9,
                 text: "ДА,АБСОЛЮТНО"
             }
         ],
-        correctAnswer:3,
+        correctAnswer:9,
     }
 ]
 
