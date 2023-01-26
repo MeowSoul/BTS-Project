@@ -20,7 +20,8 @@
     width: 100px;
 }
 
-.tests{
+.tests
+{
     width: 100%;
     text-align: center;
     letter-spacing: 0.47em;
@@ -29,10 +30,10 @@
     font-family:Oswald,'serif';
 }
 
-.test__name{
+.test__name
+{
     font-size: 40px;
     font-family:Oswald,'serif';
     width: 100%;
     text-align: center;
-
 }
