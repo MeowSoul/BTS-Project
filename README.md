@@ -1,7 +1,5 @@
 # Super BTS TEST
 
-
-
 ## Develop by:
 - BlackSoulHub
 - MeowSoul
