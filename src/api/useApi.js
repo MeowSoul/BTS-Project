@@ -2,19 +2,19 @@ const questionData = [
     {
         id:1,
         img:"1.jpg",
-        question:"Ты любишь Чон Гука?",
+        question:"Какой из нижеперечисленных растений компаньон RM?",
         answers:[
             {
                 id: 1,
-                text: "Да"
+                text: "Вишневое дерево"
             },
             {
                 id: 2,
-                text: "Да"
+                text: "Дерево корейского можжевельника"
             },
             {
                 id: 3,
-                text: "ДА,АБСОЛЮТНО"
+                text: "Дерево Гинкго"
             }
         ],
         correctAnswer:3,
@@ -22,42 +22,42 @@ const questionData = [
     {
         id:1,
         img:"2.jpg",
-        question:"Ты любишь Чон Гука?",
+        question:"Какая из нижеперечисленных длина плеч Джина?",
         answers:[
             {
                 id: 4,
-                text: "yes"
+                text: "47 см"
             },
             {
                 id: 5,
-                text: "YES!"
+                text: "48 см"
             },
             {
                 id: 6,
-                text: "ДА,АБСОЛЮТНО"
+                text: "49 см"
             }
         ],
-        correctAnswer:6,
+        correctAnswer:5,
     },
     {
         id:1,
         img:"3.jpg",
-        question:"Ты любишь Чон Гука?",
+        question:"Какой вариант из перечисленных дат и мест основания АРМИ является верным?",
         answers:[
             {
                 id: 7,
-                text: "Да"
+                text: "29 марта 2014, Olympic Hall"
             },
             {
                 id: 8,
-                text: "Да"
+                text: "30 марта 2014, Olympic Hall"
             },
             {
                 id: 9,
-                text: "ДА,АБСОЛЮТНО"
+                text: "22 марта 2014, Olympic Hall"
             }
         ],
-        correctAnswer:9,
+        correctAnswer:7,
     }
 ]
 
