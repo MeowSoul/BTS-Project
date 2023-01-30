@@ -1,7 +1,8 @@
 import style from "./TestPage.module.css"
-import {useState} from "react";
+import {useContext, useState} from "react";
 import useApi from "../../api/useApi";
 import {useNavigate} from "react-router-dom";
+import {ScoreContext} from "../../context/ScoreContext";
 
 export default function  TestPage()
 {
@@ -13,12 +14,15 @@ export default function  TestPage()
     const {getQuestionsData} = useApi()
     const navigate = useNavigate()
 
+    const {setFinalScore} = useContext(ScoreContext)
     const questions = getQuestionsData()
 
     const onNextClickHandler = () => {
         if (currentResponse != null) {
             if (currentResponse === questions[count - 1].correctAnswer)
                 setScore(score + 1)
+                setFinalScore(score)
+                console.log(score)
         }
         if (questions.length === count)
             return navigate("/result")
