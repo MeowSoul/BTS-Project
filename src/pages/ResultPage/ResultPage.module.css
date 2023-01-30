@@ -4,3 +4,16 @@
     margin: 0 auto;
 }
 
+.image_block
+{
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.image_block img
+{
+    width: 1510px;
+
+}
