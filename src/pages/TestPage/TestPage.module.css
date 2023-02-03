@@ -3,61 +3,23 @@
     margin: 0 auto;
 }
 
-.counter__container
-{
+.container__img{
     width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.button
-{
-    background-color: #FF3D12;
-    color:white;
-    border: 0;
-    width: 100px;
-    height: 40px;
-    font-size: 18px;
-    font-family:Oswald,'serif';
-}
-
-.counter
-{
-    align-items: center;
-    font-family:Oswald,'serif';
-    font-size: 18px;
-    margin-left:20px;
-}
-
-.img
-{
-    width: 715px;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 1100px;
     margin: 0 auto;
 }
 
-.question
-{
-    font-family:Oswald,'serif';
-    margin-top: 100px;
-}
-
-.question__caption
-{
-    font-size: 32px;
+.container__questionNumber{
     margin-top: 20px;
-}
-
-.question__answers
-{
-    font-size: 13px;
-}
-
-.question__answer
-{
     display: flex;
+    width: 20%;
 }
+
+.questionCounter{
+
+}
+
+.questionCounterButton{
+
+}
+

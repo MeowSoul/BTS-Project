@@ -1,75 +1,29 @@
 import style from "./TestPage.module.css"
-import {useContext, useState} from "react";
 import useApi from "../../api/useApi";
-import {useNavigate} from "react-router-dom";
-import {ScoreContext} from "../../context/ScoreContext";
+import {useState} from "react";
 
-export default function  TestPage()
+
+export default function TestPage()
 {
-    const [count, setCount] = useState(1);
-    const [score, setScore] = useState(0);
+    const [currentQuestion,setCurrentQuestion] = useState(1)
 
-    const [currentResponse, setCurrentResponse] = useState(null)
 
-    const {getQuestionsData} = useApi()
-    const navigate = useNavigate()
-
-    const {setFinalScore} = useContext(ScoreContext)
-    const questions = getQuestionsData()
-
-    const onNextClickHandler = () => {
-        if (currentResponse != null) {
-            if (currentResponse === questions[count - 1].correctAnswer)
-                setScore(score + 1)
-                setFinalScore(score)
-                console.log(score)
-        }
-        if (questions.length === count)
-            return navigate("/result")
-
-        setCurrentResponse(null)
-        setCount(count + 1)
-    }
-
-    const onRadioClickHandler = (ctx) => {
-        const answerId = ctx.target.dataset.id
-        setCurrentResponse(answerId)
-    }
 
     return (
         <div className={style.container}>
-            <div
-                className={style.img}
-                style={{backgroundImage:`url(img/${questions[count - 1].img})`}}
-            >
-            </div>
-            <div className={style.question}>
-                <div className={style.question__caption}>
-                    {questions[count - 1].question}
+            <div className={style.container__img} style={{backgroundImage:"url(img/1.jpg)"}}></div>
+            <div className={style.container__questionNumber}>
+                <div className={style.questionCounter}>
+                    {currentQuestion}/3
+                    <button
+                        className={style.questionCounterButton}
+                        onClick={() => setCurrentQuestion(prev => prev + 1)}
+                    >
+                        Дальше
+                    </button>
                 </div>
-                <div className={style.question__answers}>
-                    {questions[count - 1].answers.map(answer => (
-                        <div className={style.question__answer} key={answer.id}>
-                            <input
-                                type={"radio"}
-                                data-id={answer.id}
-                                name={count}
-                                onClick={onRadioClickHandler}
-                            />
-                            <p>{answer.text}</p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className={style.counter__container}>
-                <button className={style.button}
-                        onClick={onNextClickHandler}>Дальше
-                </button>
-                <div className={style.counter}>{count}/{questions.length}</div>
             </div>
         </div>
-
-
     )
 
 
