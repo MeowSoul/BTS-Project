@@ -21,8 +21,7 @@ export default function  TestPage()
         if (currentResponse != null) {
             if (currentResponse === questions[count - 1].correctAnswer)
                 setScore(score + 1)
-                setFinalScore(score)
-                console.log(score)
+                setFinalScore(score + 1)
         }
         if (questions.length === count)
             return navigate("/result")
@@ -68,9 +67,5 @@ export default function  TestPage()
                 <div className={style.counter}>{count}/{questions.length}</div>
             </div>
         </div>
-
-
     )
-
-
 }
