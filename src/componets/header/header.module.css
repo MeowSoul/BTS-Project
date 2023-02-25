@@ -7,16 +7,21 @@
 
 }
 
-.logo{
-    font-size: 32px;
-    font-family:Inter,'serif';
-    width: 100%;
+.logo
+{
+    width: 100px;
     height: 100px;
-    text-align: center;
-    margin-top:85px;
+    margin: 0 auto;
 }
 
-.tests{
+.logo img
+{
+    height: 100px;
+    width: 100px;
+}
+
+.tests
+{
     width: 100%;
     text-align: center;
     letter-spacing: 0.47em;
@@ -25,7 +30,8 @@
     font-family:Oswald,'serif';
 }
 
-.test__name{
+.test__name
+{
     font-size: 40px;
     font-family:Oswald,'serif';
     width: 100%;

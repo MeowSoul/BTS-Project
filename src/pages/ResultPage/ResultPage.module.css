@@ -1,0 +1,23 @@
+.container
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image_block
+{
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.image_block img
+{
+    width: 1510px;
+}
+
+.result_block {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+}
