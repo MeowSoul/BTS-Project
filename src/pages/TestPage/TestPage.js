@@ -32,7 +32,7 @@ export default function  TestPage()
 
     const onRadioClickHandler = (ctx) => {
         const answerId = ctx.target.dataset.id
-        setCurrentResponse(answerId)
+        setCurrentResponse(Number.parseInt(answerId))
     }
 
     return (
