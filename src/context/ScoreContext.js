@@ -4,10 +4,10 @@ export const ScoreContext = createContext(null);
 
 function ScoreContextProvider({children}) {
 
-    const [FinalScore, setFinalScore] = useState(null)
+    const [finalScore, setFinalScore] = useState(null)
 
     return(
-        <ScoreContext.Provider value={{FinalScore, setFinalScore}}>
+        <ScoreContext.Provider value={{finalScore, setFinalScore}}>
             {children}
         </ScoreContext.Provider>
     )
