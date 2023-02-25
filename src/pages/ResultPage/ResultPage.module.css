@@ -6,7 +6,6 @@
 
 .image_block
 {
-    width: 80%;
     height: 100%;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -15,5 +14,10 @@
 .image_block img
 {
     width: 1510px;
+}
 
+.result_block {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
 }
