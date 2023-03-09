@@ -6,18 +6,21 @@
 
 .image_block
 {
-    height: 100%;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    width: 80%;
+    margin: 5px auto 15px auto;
 }
 
 .image_block img
 {
-    width: 1510px;
+    width: 100%;
+    height: 100%;
 }
 
-.result_block {
+.result_block
+{
+    margin-top: 10px;
     font-size: 35px;
     display: flex;
     justify-content: center;
+    font-family: Inter,serif;
 }
